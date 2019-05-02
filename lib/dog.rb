@@ -53,7 +53,11 @@ class Dog
     SQL
     line = DB[:conn].execute(sql, id)[0]
     Dog.new(line[0], line[1], line[2])
+    end
     
-  end 
+    def new_from_db
+      
+      
+    end 
   
 end 
