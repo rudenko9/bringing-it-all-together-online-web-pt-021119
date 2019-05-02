@@ -51,10 +51,10 @@ class Dog
     sql = <<-SQL
       SELECT *
       FROM dogs
-      WHERE id = ?;
+      WHERE id = ?
     SQL
 
-    row = DB[:conn].execute(sql, num).first
+    row = DB[:conn].execute(sql, num)[0]
     self.new(id: row[0], name: row[1], breed: row[2])
   end
 
