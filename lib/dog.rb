@@ -91,6 +91,7 @@ class Dog
       dog_data = dog_from_db[0]
       self.find_by_id(dog_data[0])
     end
+  end
      
   
   
