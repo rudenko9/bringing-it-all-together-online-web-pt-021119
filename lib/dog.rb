@@ -55,7 +55,9 @@ class Dog
     Dog.new(line[0], line[1], line[2])
     end
     
-    def new_from_db
+    def new_from_db(row)
+      new_dog = self.new
+      
       
       
     end 
